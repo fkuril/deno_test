@@ -1,6 +1,6 @@
 addEventListener("fetch", (event) => {
   event.respondWith(
-    new Response(JSON.stringify(window), {
+    new Response(Object.keys(window), {
       status: 200,
       headers: {
         server: "denosr",
